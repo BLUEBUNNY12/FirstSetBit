@@ -15,7 +15,7 @@ public class DecimalToBinaryIdentifySets {
 		int n = input.nextInt();
 
 		decimalToBinary(n);
-		firstRightmostSetBit(n, myArray);
+		firstRightmostSetBit(myArray);
 	}
 
 	static int[] myArray = new int[100];
@@ -30,7 +30,7 @@ public class DecimalToBinaryIdentifySets {
 		}	
 	}
 
-	static void firstRightmostSetBit(int j, int[] myArray){
+	static void firstRightmostSetBit(int[] myArray){
 		for (int i=0; i<=myArray.length; i++){
 			if(myArray[i] == 1){
 				System.out.println(i+1);
